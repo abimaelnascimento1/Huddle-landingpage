@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+
+/* HEAD */
+
+.head-container {
+    display: flex;
+}
+
+.head-container-logo {
+    margin: 50px auto;
+    margin-left: 100px;
+}
+
+.head-container img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+/* SECTION */
+
+.section-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-container img {
+    display: block;
+    max-width: 95%;
+}
+
+.section-child {
+    display: flex;
+    flex-basis: 400px;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.section-child button {
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    width: 30%;
+    border: none;
+    color: rgb(129, 50, 219);
+}
+
+.section-child button:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.section-child h1,
+p,
+button {
+    margin-top: 20px;
+}
+
+.section-child button {
+    width: 50%;
+}
+
+.section-child h1 {
+    font-size: 2.1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.section-child p {
+    font-size: 1em;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer-child {
+    display: flex;
+    justify-content: end;
+    margin-right: 120px;
+}
+
+.footer-child img {
+    max-width: 4%;
+    margin-left: 20px;
+    display: block;
+
+}
+
+.footer-child img:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    border-radius: 8px;
+}
+
+
+/* QUERIES */
+
+@media screen and (max-width: 1500px) {
+    .section-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .head-container-logo img {
+        max-width: 60%;
+    }
+
+    .section-child button {
+        text-align: center;
+    }
+
+    .section-child button:hover {
+        background-color: hsl(300, 69%, 71%);
+        cursor: pointer;
+    }
+
+    .section-child p {
+        text-align: center;
+        max-width: 95%;
+    }
+
+    .section-child h1 {
+        text-align: center;
+        font-size: 1.7em;
+        max-width: 95%;
+    }
+
+    .section-child button {
+        margin-left: 80px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .footer-container {
+        display: flex;
+        margin-left: 175px;
+        margin-bottom: 80px;
+    }
+
+    .footer-child img {
+        max-width: 25px;
+        margin-top: 40px;
+    }
+
+    .footer-child img:hover {
+        cursor: pointer;
+        background-color: hsl(300, 69%, 71%);
+        border-radius: 8px;
+    }
+
+
+}
